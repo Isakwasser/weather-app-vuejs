@@ -55,7 +55,7 @@ export default {
       this.$emit("changeCity", this.currentCity);
       try {
         const API_KEY = "fefdbfb5a1c67a4e7c664447c496b3a7";
-        let url = `http://api.openweathermap.org/data/2.5/weather?q=${this.currentCity}&appid=${API_KEY}`;
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${this.currentCity}&appid=${API_KEY}`;
         let res = await fetch(url);
 
         let data = await res.json();
